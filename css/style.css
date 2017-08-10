@@ -1,0 +1,32 @@
+body{
+	width: 1280px;
+	height: 100%;
+	background-image: url(../img/bg.jpg);
+	background-repeat: no-repeat;
+}
+#show input{
+	width: 280px;
+}
+#a{
+	margin-top: 150px;
+}
+#b{
+	margin-top: 2%;
+}
+#but{
+	width: 50px;
+	margin-bottom:11px;
+}
+#lgbut1{
+	width: 60px;
+	height: 77px;
+	float: left;
+	margin-left:-22%;
+}
+#lgbut2{
+	width: 60px;
+	height: 77px;
+	float: left;
+	margin-left:-39.5%;
+	margin-top: 46%;
+}

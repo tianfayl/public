@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>计算器</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>		
+	</head>
+	<body>
+		<div ng-app="myApp" ng-controller="myController" class="row">
+			<div class="col-md-5 col-xs-5"></div>
+			<div class="col-md-4 col-xs-4">
+				<div id="a">
+					<div id="show">
+						<input type="text" name="show" ng-model="shuzi" value="{{shuzi}}" class="form-control" disabled/>
+						<input type="text" name="show" ng-model="jieguo" value="{{jieguo}}" class="form-control" disabled id="b"/>
+					</div>
+					<br />
+					<div class="row">
+						<div class="col-md-7 col-xs-7">
+							<button type="button" ng-click="num(7)" class="btn btn-default" id="but">7</button>
+							<button type="button" ng-click="num(8)" class="btn btn-default" id="but">8</button>
+							<button type="button" ng-click="num(9)" class="btn btn-default" id="but">9</button>
+							<button type="button" ng-click="num('/')" class="btn btn-default" id="but">÷</button>
+							<br/>
+							<button type="button" ng-click="num(4)" class="btn btn-default" id="but">4</button>
+							<button type="button" ng-click="num(5)" class="btn btn-default" id="but">5</button>
+							<button type="button" ng-click="num(6)" class="btn btn-default" id="but">6</button>
+							<button type="button" ng-click="num('*')" class="btn btn-default" id="but">x</button>
+							<br/>
+							<button type="button" ng-click="num(1)" class="btn btn-default" id="but">1</button>
+							<button type="button" ng-click="num(2)" class="btn btn-default" id="but">2</button>
+							<button type="button" ng-click="num(3)" class="btn btn-default" id="but">3</button>
+							<button type="button" ng-click="num('-')" class="btn btn-default" id="but">-</button>
+							<br/>
+							<button type="button" ng-click="num(0)" class="btn btn-default" id="but">0</button>
+							<button type="button" ng-click="reversal()" class="btn btn-default" id="but">±</button>
+							<button type="button" ng-click="num('.')" class="btn btn-default" id="but">.</button>
+							<button type="button" ng-click="num('+')" class="btn btn-default" id="but">+</button>
+						</div>
+						<div class="col-md-5 col-xs-5">
+							<button type="button" class="btn btn-primary btn-lg" ng-click="remove()" id="lgbut1">清零</button>
+							<br/>
+							<button type="button" class="btn btn-primary btn-lg" ng-click="js()" id="lgbut2">=</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-xs-4"></div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/angular.1.6.3.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jisuanqi.js"></script>
+</html>
